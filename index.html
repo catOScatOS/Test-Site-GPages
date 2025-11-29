@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Mon site — GitHub Pages</title>
+  <meta name="description" content="Un site statique moderne, rapide et simple à déployer sur GitHub Pages." />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="icon" type="image/svg+xml" href="assets/favicon.svg" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header class="site-header">
+    <nav class="nav">
+      <a class="logo" href="#hero">MonSite</a>
+      <button id="themeToggle" aria-label="Basculer le thème">🌗</button>
+      <a class="btn" href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <main>
+    <section id="hero" class="hero">
+      <div class="hero-content">
+        <h1>Un site simple, rapide, déployé en 1 minute</h1>
+        <p>Hébergé gratuitement via GitHub Pages. Code propre, design épuré, et prêt pour ton domaine personnalisé.</p>
+        <div class="cta">
+          <a class="btn primary" href="#features">Voir les features</a>
+          <a class="btn secondary" href="https://github.com/" target="_blank" rel="noopener">Voir le code</a>
+        </div>
+      </div>
+      <div class="hero-illustration" aria-hidden="true">
+        <div class="glow"></div>
+      </div>
+    </section>
+
+    <section id="features" class="features">
+      <h2>Ce que tu obtiens</h2>
+      <div class="grid">
+        <article class="card">
+          <h3>Performance</h3>
+          <p>Static-first, aucun backend. Vite à charger, parfait pour portfolio, doc, landing page.</p>
+        </article>
+        <article class="card">
+          <h3>Responsive</h3>
+          <p>Design fluide qui s’adapte aux mobiles, tablettes et desktop.</p>
+        </article>
+        <article class="card">
+          <h3>Thème clair/sombre</h3>
+          <p>Basculer le thème en un clic, mémorisé dans le navigateur.</p>
+        </article>
+        <article class="card">
+          <h3>Facile à déployer</h3>
+          <p>Push sur GitHub et c’est en ligne via Pages. Un CNAME pour ton domaine perso.</p>
+        </article>
+      </div>
+    </section>
+
+    <section id="about" class="about">
+      <h2>À propos</h2>
+      <p>Ce template est minimaliste pour te laisser la place d’ajouter ton contenu. Change le texte, ajoute des sections, branche un formulaire, et personnalise les couleurs.</p>
+    </section>
+
+    <section id="contact" class="contact">
+      <h2>Contact</h2>
+      <form id="contactForm">
+        <label for="name">Nom</label>
+        <input id="name" name="name" type="text" placeholder="Ton nom" required />
+
+        <label for="email">Email</label>
+        <input id="email" name="email" type="email" placeholder="ton@email.com" required />
+
+        <label for="message">Message</label>
+        <textarea id="message" name="message" rows="5" placeholder="Dis-moi ce que tu veux construire" required></textarea>
+
+        <button class="btn primary" type="submit">Envoyer</button>
+        <p class="form-note">Demo only: le formulaire ne fait qu’afficher une notification.</p>
+      </form>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <p>© <span id="year"></span> MonSite — Fait avec GitHub Pages</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
